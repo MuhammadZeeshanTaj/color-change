@@ -1,0 +1,51 @@
+body{
+    
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background;
+    transition-duration: 1.3s;
+}
+#color-btn{
+    border: 1px solid #eee;
+    background-color: rgba(0,0,0,0.5);
+    color: #eee;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color;
+    transition-duration: 1s;
+    font-family:'Segoe UI';
+}
+#color-btn:hover{
+    background-color: #333;
+}
+#hexcode.show{
+    font-family:'Segoe UI';
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    border: 1px solid #eee;
+    background-color: #333;
+    color: #eee;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0;
+    animation: hexcode 1s forwards;
+    opacity: 0;
+}
+@keyframes hexcode{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
